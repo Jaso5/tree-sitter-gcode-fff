@@ -35,13 +35,97 @@ module.exports = grammar({
 
     _marker: (_) => token('%'),
 
-    _statement: ($) => choice($.line, $.unsigned_integer, $.eol_comment),
+    _statement: ($) => choice($.line, $.unsigned_integer, $._eol_comment),
 
-    _end_of_line: ($) => choice(/\n/, /\r\n/, /\r/, $.eol_comment),
+    _end_of_line: ($) => choice(/\n/, /\r\n/, /\r/, $._eol_comment),
 
     inline_comment: (_) => token(seq('(', /[^\)]*/, ')')),
 
-    eol_comment: (_) => token(seq(';', /.*/)),
+    type_bridge_infill: (_) => "Bridge infill",
+    type_custom: (_) => "Custom",
+    type_external_perimeter: (_) => "External perimeter",
+    type_internal_infill: (_) => "Internal infill",
+    type_overhang_perimeter: (_) => "Overhang perimeter",
+    type_perimeter: (_) => "Perimeter",
+    type_skirt_brim: (_) => "Skirt/Brim",
+    type_solid_infill: (_) => "Solid infill",
+    type_support_material: (_) => "Support material",
+    type_support_interface: (_) => "Support material interface",
+    type_top_infill: (_) => "Top solid infill",
+
+    _type_marker: ($) => seq(
+      token(prec(2, "TYPE:")),
+      choice(
+        $.type_bridge_infill,
+        $.type_custom,
+        $.type_external_perimeter,
+        $.type_internal_infill,
+        $.type_overhang_perimeter,
+        $.type_perimeter,
+        $.type_skirt_brim,
+        $.type_solid_infill,
+        $.type_support_material,
+        $.type_support_interface,
+        $.type_top_infill,
+      )
+    ),
+
+    layer_change: (_) =>        token(prec(2, "LAYER_CHANGE")),
+    before_layer_change: (_) => token(prec(2, "BEFORE_LAYER_CHANGE")),
+    after_layer_change: (_) =>  token(prec(2, "AFTER_LAYER_CHANGE")),
+    wipe_start: (_) =>          token(prec(2, "WIPE_START")),
+    wipe_end: (_) =>            token(prec(2, "WIPE_END")),
+
+    z_height: $ => seq(
+      token(prec(2, "Z:")),
+      field("value", $.number),
+      $._end_of_line
+    ),
+
+    line_width: $ => seq(
+      token(prec(2, "WIDTH:")),
+      field("value", $.number),
+      $._end_of_line
+    ),
+
+    line_height: $ => seq(
+      token(prec(2, "HEIGHT:")),
+      field("value", $.number),
+      $._end_of_line
+    ),
+
+    name: (_) => token(/[a-zA-Z0-9_\-\s]*/), //token(/[a-zA-Z0-9_-]*/),
+
+    // TODO: Fix parsing, this botches parsing the name
+    object_marker: $ => seq(
+      token(prec(2, "printing object")),
+      field("name", $.name),
+      ":",
+      field("id", $.number),
+      /.*/,
+    ),
+
+    eol_comment: $ => token(prec(1, /.*/)),
+
+    _eol_comment: $ => seq(
+      ';',
+      choice(
+        $.eol_comment,
+        // Markers
+        $._type_marker,
+        $.layer_change,
+        $.before_layer_change,
+        $.after_layer_change,
+        $.wipe_start,
+        $.wipe_end,
+        // Parameterized flags
+        $.layer_change,
+        $.z_height,
+        $.line_width,
+        $.line_height,
+        $.object_marker,
+      ),
+    ),
 
     line: ($) =>
       prec(
@@ -50,7 +134,7 @@ module.exports = grammar({
           optional($.line_number),
           repeat1($.word),
           optional($.checksum),
-          optional($.eol_comment),
+          optional($._eol_comment),
           $._end_of_line,
         ),
       ),
@@ -69,6 +153,8 @@ module.exports = grammar({
 
     unsigned_integer: (_) => /\d+/,
     integer: ($) => alias(seq(optional('-'), $.unsigned_integer), 'integer'),
+
+    string: (_) => token(seq('"', /.*/, '"')),
 
     // Words
     word: ($) =>
@@ -136,7 +222,7 @@ module.exports = grammar({
     parameter_word: ($) =>
       seq(
         $.parameter_identifier,
-        choice($.number, field('parameter_name', $.property_name)),
+        choice($.number, field('parameter_name', $.property_name), $.string),
       ),
     parameter_variable: ($) =>
       seq(

@@ -145,6 +145,14 @@
       "required": true,
       "types": [
         {
+          "type": "after_layer_change",
+          "named": true
+        },
+        {
+          "type": "before_layer_change",
+          "named": true
+        },
+        {
           "type": "eol_comment",
           "named": true
         },
@@ -153,7 +161,79 @@
           "named": true
         },
         {
+          "type": "layer_change",
+          "named": true
+        },
+        {
+          "type": "line_height",
+          "named": true
+        },
+        {
+          "type": "line_width",
+          "named": true
+        },
+        {
+          "type": "object_marker",
+          "named": true
+        },
+        {
           "type": "subroutine_block",
+          "named": true
+        },
+        {
+          "type": "type_bridge_infill",
+          "named": true
+        },
+        {
+          "type": "type_custom",
+          "named": true
+        },
+        {
+          "type": "type_external_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_internal_infill",
+          "named": true
+        },
+        {
+          "type": "type_overhang_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_skirt_brim",
+          "named": true
+        },
+        {
+          "type": "type_solid_infill",
+          "named": true
+        },
+        {
+          "type": "type_support_interface",
+          "named": true
+        },
+        {
+          "type": "type_support_material",
+          "named": true
+        },
+        {
+          "type": "type_top_infill",
+          "named": true
+        },
+        {
+          "type": "wipe_end",
+          "named": true
+        },
+        {
+          "type": "wipe_start",
+          "named": true
+        },
+        {
+          "type": "z_height",
           "named": true
         }
       ]
@@ -179,6 +259,14 @@
       "required": true,
       "types": [
         {
+          "type": "after_layer_change",
+          "named": true
+        },
+        {
+          "type": "before_layer_change",
+          "named": true
+        },
+        {
           "type": "eol_comment",
           "named": true
         },
@@ -187,7 +275,79 @@
           "named": true
         },
         {
+          "type": "layer_change",
+          "named": true
+        },
+        {
+          "type": "line_height",
+          "named": true
+        },
+        {
+          "type": "line_width",
+          "named": true
+        },
+        {
+          "type": "object_marker",
+          "named": true
+        },
+        {
           "type": "subroutine_block",
+          "named": true
+        },
+        {
+          "type": "type_bridge_infill",
+          "named": true
+        },
+        {
+          "type": "type_custom",
+          "named": true
+        },
+        {
+          "type": "type_external_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_internal_infill",
+          "named": true
+        },
+        {
+          "type": "type_overhang_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_skirt_brim",
+          "named": true
+        },
+        {
+          "type": "type_solid_infill",
+          "named": true
+        },
+        {
+          "type": "type_support_interface",
+          "named": true
+        },
+        {
+          "type": "type_support_material",
+          "named": true
+        },
+        {
+          "type": "type_top_infill",
+          "named": true
+        },
+        {
+          "type": "wipe_end",
+          "named": true
+        },
+        {
+          "type": "wipe_start",
+          "named": true
+        },
+        {
+          "type": "z_height",
           "named": true
         }
       ]
@@ -301,6 +461,14 @@
       "required": true,
       "types": [
         {
+          "type": "after_layer_change",
+          "named": true
+        },
+        {
+          "type": "before_layer_change",
+          "named": true
+        },
+        {
           "type": "eol_comment",
           "named": true
         },
@@ -309,7 +477,79 @@
           "named": true
         },
         {
+          "type": "layer_change",
+          "named": true
+        },
+        {
           "type": "line",
+          "named": true
+        },
+        {
+          "type": "line_height",
+          "named": true
+        },
+        {
+          "type": "line_width",
+          "named": true
+        },
+        {
+          "type": "object_marker",
+          "named": true
+        },
+        {
+          "type": "type_bridge_infill",
+          "named": true
+        },
+        {
+          "type": "type_custom",
+          "named": true
+        },
+        {
+          "type": "type_external_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_internal_infill",
+          "named": true
+        },
+        {
+          "type": "type_overhang_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_skirt_brim",
+          "named": true
+        },
+        {
+          "type": "type_solid_infill",
+          "named": true
+        },
+        {
+          "type": "type_support_interface",
+          "named": true
+        },
+        {
+          "type": "type_support_material",
+          "named": true
+        },
+        {
+          "type": "type_top_infill",
+          "named": true
+        },
+        {
+          "type": "wipe_end",
+          "named": true
+        },
+        {
+          "type": "wipe_start",
+          "named": true
+        },
+        {
+          "type": "z_height",
           "named": true
         }
       ]
@@ -373,6 +613,14 @@
       "required": true,
       "types": [
         {
+          "type": "after_layer_change",
+          "named": true
+        },
+        {
+          "type": "before_layer_change",
+          "named": true
+        },
+        {
           "type": "else_clause",
           "named": true
         },
@@ -389,7 +637,79 @@
           "named": true
         },
         {
+          "type": "layer_change",
+          "named": true
+        },
+        {
+          "type": "line_height",
+          "named": true
+        },
+        {
+          "type": "line_width",
+          "named": true
+        },
+        {
+          "type": "object_marker",
+          "named": true
+        },
+        {
           "type": "subroutine_block",
+          "named": true
+        },
+        {
+          "type": "type_bridge_infill",
+          "named": true
+        },
+        {
+          "type": "type_custom",
+          "named": true
+        },
+        {
+          "type": "type_external_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_internal_infill",
+          "named": true
+        },
+        {
+          "type": "type_overhang_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_skirt_brim",
+          "named": true
+        },
+        {
+          "type": "type_solid_infill",
+          "named": true
+        },
+        {
+          "type": "type_support_interface",
+          "named": true
+        },
+        {
+          "type": "type_support_material",
+          "named": true
+        },
+        {
+          "type": "type_top_infill",
+          "named": true
+        },
+        {
+          "type": "wipe_end",
+          "named": true
+        },
+        {
+          "type": "wipe_start",
+          "named": true
+        },
+        {
+          "type": "z_height",
           "named": true
         }
       ]
@@ -482,6 +802,14 @@
       "required": true,
       "types": [
         {
+          "type": "after_layer_change",
+          "named": true
+        },
+        {
+          "type": "before_layer_change",
+          "named": true
+        },
+        {
           "type": "checksum",
           "named": true
         },
@@ -490,11 +818,189 @@
           "named": true
         },
         {
+          "type": "layer_change",
+          "named": true
+        },
+        {
+          "type": "line_height",
+          "named": true
+        },
+        {
           "type": "line_number",
           "named": true
         },
         {
+          "type": "line_width",
+          "named": true
+        },
+        {
+          "type": "object_marker",
+          "named": true
+        },
+        {
+          "type": "type_bridge_infill",
+          "named": true
+        },
+        {
+          "type": "type_custom",
+          "named": true
+        },
+        {
+          "type": "type_external_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_internal_infill",
+          "named": true
+        },
+        {
+          "type": "type_overhang_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_skirt_brim",
+          "named": true
+        },
+        {
+          "type": "type_solid_infill",
+          "named": true
+        },
+        {
+          "type": "type_support_interface",
+          "named": true
+        },
+        {
+          "type": "type_support_material",
+          "named": true
+        },
+        {
+          "type": "type_top_infill",
+          "named": true
+        },
+        {
+          "type": "wipe_end",
+          "named": true
+        },
+        {
+          "type": "wipe_start",
+          "named": true
+        },
+        {
           "type": "word",
+          "named": true
+        },
+        {
+          "type": "z_height",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "line_height",
+    "named": true,
+    "fields": {
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "after_layer_change",
+          "named": true
+        },
+        {
+          "type": "before_layer_change",
+          "named": true
+        },
+        {
+          "type": "eol_comment",
+          "named": true
+        },
+        {
+          "type": "layer_change",
+          "named": true
+        },
+        {
+          "type": "line_height",
+          "named": true
+        },
+        {
+          "type": "line_width",
+          "named": true
+        },
+        {
+          "type": "object_marker",
+          "named": true
+        },
+        {
+          "type": "type_bridge_infill",
+          "named": true
+        },
+        {
+          "type": "type_custom",
+          "named": true
+        },
+        {
+          "type": "type_external_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_internal_infill",
+          "named": true
+        },
+        {
+          "type": "type_overhang_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_skirt_brim",
+          "named": true
+        },
+        {
+          "type": "type_solid_infill",
+          "named": true
+        },
+        {
+          "type": "type_support_interface",
+          "named": true
+        },
+        {
+          "type": "type_support_material",
+          "named": true
+        },
+        {
+          "type": "type_top_infill",
+          "named": true
+        },
+        {
+          "type": "wipe_end",
+          "named": true
+        },
+        {
+          "type": "wipe_start",
+          "named": true
+        },
+        {
+          "type": "z_height",
           "named": true
         }
       ]
@@ -510,6 +1016,112 @@
       "types": [
         {
           "type": "unsigned_integer",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "line_width",
+    "named": true,
+    "fields": {
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "after_layer_change",
+          "named": true
+        },
+        {
+          "type": "before_layer_change",
+          "named": true
+        },
+        {
+          "type": "eol_comment",
+          "named": true
+        },
+        {
+          "type": "layer_change",
+          "named": true
+        },
+        {
+          "type": "line_height",
+          "named": true
+        },
+        {
+          "type": "line_width",
+          "named": true
+        },
+        {
+          "type": "object_marker",
+          "named": true
+        },
+        {
+          "type": "type_bridge_infill",
+          "named": true
+        },
+        {
+          "type": "type_custom",
+          "named": true
+        },
+        {
+          "type": "type_external_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_internal_infill",
+          "named": true
+        },
+        {
+          "type": "type_overhang_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_skirt_brim",
+          "named": true
+        },
+        {
+          "type": "type_solid_infill",
+          "named": true
+        },
+        {
+          "type": "type_support_interface",
+          "named": true
+        },
+        {
+          "type": "type_support_material",
+          "named": true
+        },
+        {
+          "type": "type_top_infill",
+          "named": true
+        },
+        {
+          "type": "wipe_end",
+          "named": true
+        },
+        {
+          "type": "wipe_start",
+          "named": true
+        },
+        {
+          "type": "z_height",
           "named": true
         }
       ]
@@ -535,6 +1147,14 @@
       "required": true,
       "types": [
         {
+          "type": "after_layer_change",
+          "named": true
+        },
+        {
+          "type": "before_layer_change",
+          "named": true
+        },
+        {
           "type": "eol_comment",
           "named": true
         },
@@ -543,7 +1163,79 @@
           "named": true
         },
         {
+          "type": "layer_change",
+          "named": true
+        },
+        {
+          "type": "line_height",
+          "named": true
+        },
+        {
+          "type": "line_width",
+          "named": true
+        },
+        {
+          "type": "object_marker",
+          "named": true
+        },
+        {
           "type": "subroutine_block",
+          "named": true
+        },
+        {
+          "type": "type_bridge_infill",
+          "named": true
+        },
+        {
+          "type": "type_custom",
+          "named": true
+        },
+        {
+          "type": "type_external_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_internal_infill",
+          "named": true
+        },
+        {
+          "type": "type_overhang_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_skirt_brim",
+          "named": true
+        },
+        {
+          "type": "type_solid_infill",
+          "named": true
+        },
+        {
+          "type": "type_support_interface",
+          "named": true
+        },
+        {
+          "type": "type_support_material",
+          "named": true
+        },
+        {
+          "type": "type_top_infill",
+          "named": true
+        },
+        {
+          "type": "wipe_end",
+          "named": true
+        },
+        {
+          "type": "wipe_start",
+          "named": true
+        },
+        {
+          "type": "z_height",
           "named": true
         }
       ]
@@ -618,6 +1310,32 @@
           "named": true
         }
       ]
+    }
+  },
+  {
+    "type": "object_marker",
+    "named": true,
+    "fields": {
+      "id": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "name",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -716,6 +1434,10 @@
         },
         {
           "type": "parameter_identifier",
+          "named": true
+        },
+        {
+          "type": "string",
           "named": true
         }
       ]
@@ -826,7 +1548,19 @@
       "required": false,
       "types": [
         {
+          "type": "after_layer_change",
+          "named": true
+        },
+        {
+          "type": "before_layer_change",
+          "named": true
+        },
+        {
           "type": "eol_comment",
+          "named": true
+        },
+        {
+          "type": "layer_change",
           "named": true
         },
         {
@@ -834,7 +1568,75 @@
           "named": true
         },
         {
+          "type": "line_height",
+          "named": true
+        },
+        {
+          "type": "line_width",
+          "named": true
+        },
+        {
+          "type": "object_marker",
+          "named": true
+        },
+        {
+          "type": "type_bridge_infill",
+          "named": true
+        },
+        {
+          "type": "type_custom",
+          "named": true
+        },
+        {
+          "type": "type_external_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_internal_infill",
+          "named": true
+        },
+        {
+          "type": "type_overhang_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_skirt_brim",
+          "named": true
+        },
+        {
+          "type": "type_solid_infill",
+          "named": true
+        },
+        {
+          "type": "type_support_interface",
+          "named": true
+        },
+        {
+          "type": "type_support_material",
+          "named": true
+        },
+        {
+          "type": "type_top_infill",
+          "named": true
+        },
+        {
           "type": "unsigned_integer",
+          "named": true
+        },
+        {
+          "type": "wipe_end",
+          "named": true
+        },
+        {
+          "type": "wipe_start",
+          "named": true
+        },
+        {
+          "type": "z_height",
           "named": true
         }
       ]
@@ -944,6 +1746,14 @@
       "required": true,
       "types": [
         {
+          "type": "after_layer_change",
+          "named": true
+        },
+        {
+          "type": "before_layer_change",
+          "named": true
+        },
+        {
           "type": "eol_comment",
           "named": true
         },
@@ -952,7 +1762,79 @@
           "named": true
         },
         {
+          "type": "layer_change",
+          "named": true
+        },
+        {
+          "type": "line_height",
+          "named": true
+        },
+        {
+          "type": "line_width",
+          "named": true
+        },
+        {
+          "type": "object_marker",
+          "named": true
+        },
+        {
           "type": "subroutine_block",
+          "named": true
+        },
+        {
+          "type": "type_bridge_infill",
+          "named": true
+        },
+        {
+          "type": "type_custom",
+          "named": true
+        },
+        {
+          "type": "type_external_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_internal_infill",
+          "named": true
+        },
+        {
+          "type": "type_overhang_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_skirt_brim",
+          "named": true
+        },
+        {
+          "type": "type_solid_infill",
+          "named": true
+        },
+        {
+          "type": "type_support_interface",
+          "named": true
+        },
+        {
+          "type": "type_support_material",
+          "named": true
+        },
+        {
+          "type": "type_top_infill",
+          "named": true
+        },
+        {
+          "type": "wipe_end",
+          "named": true
+        },
+        {
+          "type": "wipe_start",
+          "named": true
+        },
+        {
+          "type": "z_height",
           "named": true
         }
       ]
@@ -1094,6 +1976,112 @@
     }
   },
   {
+    "type": "z_height",
+    "named": true,
+    "fields": {
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "after_layer_change",
+          "named": true
+        },
+        {
+          "type": "before_layer_change",
+          "named": true
+        },
+        {
+          "type": "eol_comment",
+          "named": true
+        },
+        {
+          "type": "layer_change",
+          "named": true
+        },
+        {
+          "type": "line_height",
+          "named": true
+        },
+        {
+          "type": "line_width",
+          "named": true
+        },
+        {
+          "type": "object_marker",
+          "named": true
+        },
+        {
+          "type": "type_bridge_infill",
+          "named": true
+        },
+        {
+          "type": "type_custom",
+          "named": true
+        },
+        {
+          "type": "type_external_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_internal_infill",
+          "named": true
+        },
+        {
+          "type": "type_overhang_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_perimeter",
+          "named": true
+        },
+        {
+          "type": "type_skirt_brim",
+          "named": true
+        },
+        {
+          "type": "type_solid_infill",
+          "named": true
+        },
+        {
+          "type": "type_support_interface",
+          "named": true
+        },
+        {
+          "type": "type_support_material",
+          "named": true
+        },
+        {
+          "type": "type_top_infill",
+          "named": true
+        },
+        {
+          "type": "wipe_end",
+          "named": true
+        },
+        {
+          "type": "wipe_start",
+          "named": true
+        },
+        {
+          "type": "z_height",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "$",
     "named": false
   },
@@ -1126,11 +2114,35 @@
     "named": false
   },
   {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
     "type": "=",
     "named": false
   },
   {
     "type": "@",
+    "named": false
+  },
+  {
+    "type": "HEIGHT:",
+    "named": false
+  },
+  {
+    "type": "TYPE:",
+    "named": false
+  },
+  {
+    "type": "WIDTH:",
+    "named": false
+  },
+  {
+    "type": "Z:",
     "named": false
   },
   {
@@ -1154,6 +2166,10 @@
     "named": false
   },
   {
+    "type": "after_layer_change",
+    "named": true
+  },
+  {
     "type": "and",
     "named": false
   },
@@ -1172,6 +2188,10 @@
   {
     "type": "bcd",
     "named": false
+  },
+  {
+    "type": "before_layer_change",
+    "named": true
   },
   {
     "type": "bin",
@@ -1283,6 +2303,10 @@
     "named": false
   },
   {
+    "type": "layer_change",
+    "named": true
+  },
+  {
     "type": "le",
     "named": false
   },
@@ -1307,6 +2331,10 @@
     "named": false
   },
   {
+    "type": "name",
+    "named": true
+  },
+  {
     "type": "ne",
     "named": false
   },
@@ -1325,6 +2353,10 @@
   {
     "type": "parameter_identifier",
     "named": true
+  },
+  {
+    "type": "printing object",
+    "named": false
   },
   {
     "type": "property_name",
@@ -1355,6 +2387,10 @@
     "named": false
   },
   {
+    "type": "string",
+    "named": true
+  },
+  {
     "type": "sub",
     "named": false
   },
@@ -1371,8 +2407,60 @@
     "named": false
   },
   {
+    "type": "type_bridge_infill",
+    "named": true
+  },
+  {
+    "type": "type_custom",
+    "named": true
+  },
+  {
+    "type": "type_external_perimeter",
+    "named": true
+  },
+  {
+    "type": "type_internal_infill",
+    "named": true
+  },
+  {
+    "type": "type_overhang_perimeter",
+    "named": true
+  },
+  {
+    "type": "type_perimeter",
+    "named": true
+  },
+  {
+    "type": "type_skirt_brim",
+    "named": true
+  },
+  {
+    "type": "type_solid_infill",
+    "named": true
+  },
+  {
+    "type": "type_support_interface",
+    "named": true
+  },
+  {
+    "type": "type_support_material",
+    "named": true
+  },
+  {
+    "type": "type_top_infill",
+    "named": true
+  },
+  {
     "type": "while",
     "named": false
+  },
+  {
+    "type": "wipe_end",
+    "named": true
+  },
+  {
+    "type": "wipe_start",
+    "named": true
   },
   {
     "type": "xor",

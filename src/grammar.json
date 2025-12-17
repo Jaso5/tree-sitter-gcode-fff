@@ -54,7 +54,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "eol_comment"
+          "name": "_eol_comment"
         }
       ]
     },
@@ -75,7 +75,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "eol_comment"
+          "name": "_eol_comment"
         }
       ]
     },
@@ -99,21 +99,373 @@
         ]
       }
     },
+    "type_bridge_infill": {
+      "type": "STRING",
+      "value": "Bridge infill"
+    },
+    "type_custom": {
+      "type": "STRING",
+      "value": "Custom"
+    },
+    "type_external_perimeter": {
+      "type": "STRING",
+      "value": "External perimeter"
+    },
+    "type_internal_infill": {
+      "type": "STRING",
+      "value": "Internal infill"
+    },
+    "type_overhang_perimeter": {
+      "type": "STRING",
+      "value": "Overhang perimeter"
+    },
+    "type_perimeter": {
+      "type": "STRING",
+      "value": "Perimeter"
+    },
+    "type_skirt_brim": {
+      "type": "STRING",
+      "value": "Skirt/Brim"
+    },
+    "type_solid_infill": {
+      "type": "STRING",
+      "value": "Solid infill"
+    },
+    "type_support_material": {
+      "type": "STRING",
+      "value": "Support material"
+    },
+    "type_support_interface": {
+      "type": "STRING",
+      "value": "Support material interface"
+    },
+    "type_top_infill": {
+      "type": "STRING",
+      "value": "Top solid infill"
+    },
+    "_type_marker": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "TOKEN",
+          "content": {
+            "type": "PREC",
+            "value": 2,
+            "content": {
+              "type": "STRING",
+              "value": "TYPE:"
+            }
+          }
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "type_bridge_infill"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "type_custom"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "type_external_perimeter"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "type_internal_infill"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "type_overhang_perimeter"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "type_perimeter"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "type_skirt_brim"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "type_solid_infill"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "type_support_material"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "type_support_interface"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "type_top_infill"
+            }
+          ]
+        }
+      ]
+    },
+    "layer_change": {
+      "type": "TOKEN",
+      "content": {
+        "type": "PREC",
+        "value": 2,
+        "content": {
+          "type": "STRING",
+          "value": "LAYER_CHANGE"
+        }
+      }
+    },
+    "before_layer_change": {
+      "type": "TOKEN",
+      "content": {
+        "type": "PREC",
+        "value": 2,
+        "content": {
+          "type": "STRING",
+          "value": "BEFORE_LAYER_CHANGE"
+        }
+      }
+    },
+    "after_layer_change": {
+      "type": "TOKEN",
+      "content": {
+        "type": "PREC",
+        "value": 2,
+        "content": {
+          "type": "STRING",
+          "value": "AFTER_LAYER_CHANGE"
+        }
+      }
+    },
+    "wipe_start": {
+      "type": "TOKEN",
+      "content": {
+        "type": "PREC",
+        "value": 2,
+        "content": {
+          "type": "STRING",
+          "value": "WIPE_START"
+        }
+      }
+    },
+    "wipe_end": {
+      "type": "TOKEN",
+      "content": {
+        "type": "PREC",
+        "value": 2,
+        "content": {
+          "type": "STRING",
+          "value": "WIPE_END"
+        }
+      }
+    },
+    "z_height": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "TOKEN",
+          "content": {
+            "type": "PREC",
+            "value": 2,
+            "content": {
+              "type": "STRING",
+              "value": "Z:"
+            }
+          }
+        },
+        {
+          "type": "FIELD",
+          "name": "value",
+          "content": {
+            "type": "SYMBOL",
+            "name": "number"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_end_of_line"
+        }
+      ]
+    },
+    "line_width": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "TOKEN",
+          "content": {
+            "type": "PREC",
+            "value": 2,
+            "content": {
+              "type": "STRING",
+              "value": "WIDTH:"
+            }
+          }
+        },
+        {
+          "type": "FIELD",
+          "name": "value",
+          "content": {
+            "type": "SYMBOL",
+            "name": "number"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_end_of_line"
+        }
+      ]
+    },
+    "line_height": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "TOKEN",
+          "content": {
+            "type": "PREC",
+            "value": 2,
+            "content": {
+              "type": "STRING",
+              "value": "HEIGHT:"
+            }
+          }
+        },
+        {
+          "type": "FIELD",
+          "name": "value",
+          "content": {
+            "type": "SYMBOL",
+            "name": "number"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_end_of_line"
+        }
+      ]
+    },
+    "name": {
+      "type": "TOKEN",
+      "content": {
+        "type": "PATTERN",
+        "value": "[a-zA-Z0-9_\\-\\s]*"
+      }
+    },
+    "object_marker": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "TOKEN",
+          "content": {
+            "type": "PREC",
+            "value": 2,
+            "content": {
+              "type": "STRING",
+              "value": "printing object"
+            }
+          }
+        },
+        {
+          "type": "FIELD",
+          "name": "name",
+          "content": {
+            "type": "SYMBOL",
+            "name": "name"
+          }
+        },
+        {
+          "type": "STRING",
+          "value": ":"
+        },
+        {
+          "type": "FIELD",
+          "name": "id",
+          "content": {
+            "type": "SYMBOL",
+            "name": "number"
+          }
+        },
+        {
+          "type": "PATTERN",
+          "value": ".*"
+        }
+      ]
+    },
     "eol_comment": {
       "type": "TOKEN",
       "content": {
-        "type": "SEQ",
-        "members": [
-          {
-            "type": "STRING",
-            "value": ";"
-          },
-          {
-            "type": "PATTERN",
-            "value": ".*"
-          }
-        ]
+        "type": "PREC",
+        "value": 1,
+        "content": {
+          "type": "PATTERN",
+          "value": ".*"
+        }
       }
+    },
+    "_eol_comment": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": ";"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "eol_comment"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "_type_marker"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "layer_change"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "before_layer_change"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "after_layer_change"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "wipe_start"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "wipe_end"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "layer_change"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "z_height"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "line_width"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "line_height"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "object_marker"
+            }
+          ]
+        }
+      ]
     },
     "line": {
       "type": "PREC",
@@ -157,7 +509,7 @@
             "members": [
               {
                 "type": "SYMBOL",
-                "name": "eol_comment"
+                "name": "_eol_comment"
               },
               {
                 "type": "BLANK"
@@ -309,6 +661,26 @@
       },
       "named": false,
       "value": "integer"
+    },
+    "string": {
+      "type": "TOKEN",
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
+            "type": "STRING",
+            "value": "\""
+          },
+          {
+            "type": "PATTERN",
+            "value": ".*"
+          },
+          {
+            "type": "STRING",
+            "value": "\""
+          }
+        ]
+      }
     },
     "word": {
       "type": "CHOICE",
@@ -689,6 +1061,10 @@
                 "type": "SYMBOL",
                 "name": "property_name"
               }
+            },
+            {
+              "type": "SYMBOL",
+              "name": "string"
             }
           ]
         }
